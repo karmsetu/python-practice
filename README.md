@@ -19,3 +19,11 @@ python-practice: all the advancements will be recorded here
 ## exception handling
 
 ## file handling
+
+## Modules
+
+```py
+import mod as m
+from mod import bye
+from mod import *
+```

@@ -36,3 +36,13 @@ def moveFile(src, des):
             print(src+"was moved")
     except FileNotFoundError:
         print(src+"not found")
+
+def delFile(src):
+    try:
+        os.remove(src)
+    except FileNotFoundError:
+        print("file not found")
+    except PermissionError:
+        print("changes in file are not permissable")
+    else:
+        print(src+ "file eas deleted")
